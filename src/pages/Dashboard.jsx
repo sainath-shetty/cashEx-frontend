@@ -8,7 +8,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchBalance = async () => {
       try {
-        const response = await axios.get("http://localhost:9000/api/v1/account/balance", {
+        const response = await axios.get("https://cash-ex-api.vercel.app/account/balance", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token")
           }
