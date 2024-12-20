@@ -17,11 +17,10 @@ const SignIn = () => {
     }
 
     try {
-      const response = await axios.post(
-        'https://cash-ex-api.vercel.app/api/user/signin', 
-        { username, password }, 
-        { withCredentials: true } // Allow credentials if necessary (cookies or session data)
-      );
+      const response = await axios.post('https://cash-ex-api.vercel.app/api/user/signin', {
+        username,
+        password,
+      });
 
       // Store token in localStorage and navigate to dashboard
       localStorage.setItem('token', response.data.token);
