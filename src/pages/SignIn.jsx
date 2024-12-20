@@ -17,7 +17,7 @@ const SignIn = () => {
     }
 
     try {
-      const response = await axios.post('https://cash-ex-api.vercel.app/user/signin', {
+      const response = await axios.post('https://cash-ex-api.vercel.app/api/user/signin', {
         username,
         password,
       });

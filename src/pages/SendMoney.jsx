@@ -32,7 +32,7 @@ const SendMoney = () => {
         setAmount(e.target.value)
       }}placeholder={"Enter Amount"}/>
       <button onClick={async()=>{
-         const response=await axios.post("https://cash-ex-api.vercel.app/account/transfer",{
+         const response=await axios.post("https://cash-ex-api.vercel.app/api/account/transfer",{
           to:id,
           samount:amount
          },{

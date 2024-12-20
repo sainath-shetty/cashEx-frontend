@@ -22,7 +22,7 @@ const SignUp = () => {
       return;
     }
     try {
-      const response = await axios.post('https://cash-ex-api.vercel.app/user/signup', {
+      const response = await axios.post('https://cash-ex-api.vercel.app/api/user/signup', {
         username,
         firstName,
         lastName,
