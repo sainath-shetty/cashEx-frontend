@@ -32,7 +32,7 @@ const SendMoney = () => {
         setAmount(e.target.value)
       }}placeholder={"Enter Amount"}/>
       <button onClick={async()=>{
-         const response=await axios.post("/api/v1/account/transfer",{
+         const response=await axios.post("http://localhost:9000/api/v1/account/transfer",{
           to:id,
           samount:amount
          },{

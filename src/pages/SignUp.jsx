@@ -27,7 +27,7 @@ const SignUp = () => {
 
     try {
       // Sending sign-up request
-      const response = await axios.post('/api/v1/user/signup', {
+      const response = await axios.post('http://localhost:9000/api/v1/user/signup', {
         username,
         firstName,
         lastName,
@@ -64,7 +64,7 @@ const SignUp = () => {
       <div className="bg-white flex flex-col w-[400px] h-[540px] justify-center p-6 rounded-lg shadow-lg">
         <Heading label="Sign Up" />
         <SubHeading label="You can enter your details and sign up" />
-        
+
         <InputBox
           onChange={(e) => setFirstname(e.target.value)}
           label="First Name"
